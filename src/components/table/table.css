@@ -1,0 +1,8 @@
+.search__content table {
+    width: 100%;
+    text-align: left;
+    margin-top: 3rem;
+}
+.search__content th {
+    width: 33%;
+}

@@ -1,0 +1,64 @@
+.login__container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.login {
+  display: block;
+  margin: auto;
+  width: 50%;
+}
+
+.login__container .login {
+  background: var(--color-bg-variant);
+  padding: 2.4rem 5rem;
+  border-radius: 2rem;
+  border: 1px solid transparent;
+  transition: var(--transition);
+}
+
+.login__container > div:hover {
+  background: transparent;
+  border-color: var(--color-primary-variant);
+  cursor: default;
+}
+
+.login__details button{
+    display: block;
+    margin: auto;
+}
+
+.login__links{
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+
+
+/* =========== MEDIA QUERIES (MEDIUM DEVICES) ===========  */
+@media screen and (max-width: 1024px) {
+  .login__container {
+    grid-template-columns: 1fr;
+  }
+  .login__container > div {
+    width: 80%;
+    padding: 2rem;
+    margin: 0 auto;
+  }
+  .login__content {
+    padding: 1rem;
+  }
+}
+
+/* =========== MEDIA QUERIES (SMALL DEVICES) ===========  */
+@media screen and (max-width: 600px) {
+  .login__container {
+    gap: 1rem;
+  }
+  .login__container > div {
+    width: 100%;
+    padding: 2rem 1rem;
+  }
+}
